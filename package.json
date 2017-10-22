@@ -1,6 +1,6 @@
 {
   "name": "react-md-switch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Component Material Design Switch.",
   "main": "index.js",
   "repository": "https://github.com/mcnallydev/react-md-switch.git",

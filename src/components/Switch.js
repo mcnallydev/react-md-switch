@@ -17,6 +17,16 @@ class Switch extends Component {
   }
 
   /**
+   * React Component componentWillReceiveProps.
+   * @param  {Object} nextProps
+   */
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      checked: nextProps.checked
+    });
+  }
+
+  /**
    * OnChange method to set checked state
    * @return {[type]} [description]
    */

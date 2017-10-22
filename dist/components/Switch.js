@@ -52,12 +52,25 @@ var Switch = function (_Component) {
   }
 
   /**
-   * OnChange method to set checked state
-   * @return {[type]} [description]
+   * React Component componentWillReceiveProps.
+   * @param  {Object} nextProps
    */
 
 
   _createClass(Switch, [{
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      this.setState({
+        checked: nextProps.checked
+      });
+    }
+
+    /**
+     * OnChange method to set checked state
+     * @return {[type]} [description]
+     */
+
+  }, {
     key: 'render',
 
 

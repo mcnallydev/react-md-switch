@@ -3,8 +3,10 @@ import Switch from '../dist';
 
 class App extends Component {
 
-  onChange = (value) => {
-    console.log(value);
+  onChange = (event, status, id) => {
+    console.log(event);
+    console.log(status);
+    console.log(id);
   }
 
   render() {

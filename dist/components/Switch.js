@@ -36,11 +36,11 @@ var Switch = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Switch.__proto__ || Object.getPrototypeOf(Switch)).call(this, props));
 
-    _this.onChange = function () {
+    _this.onChange = function (e) {
       _this.setState({
         checked: !_this.state.checked
       }, function () {
-        _this.props.onChange(_this.state.checked);
+        _this.props.onChange(e, _this.state.checked, _this.props.id);
       });
     };
 

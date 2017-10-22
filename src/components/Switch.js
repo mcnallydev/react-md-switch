@@ -20,11 +20,11 @@ class Switch extends Component {
    * OnChange method to set checked state
    * @return {[type]} [description]
    */
-  onChange = () => {
+  onChange = (e) => {
     this.setState({
       checked: !this.state.checked
     }, () => {
-      this.props.onChange(this.state.checked);
+      this.props.onChange(e, this.state.checked, this.props.id);
     });
   }
 
